@@ -31,7 +31,7 @@ class App extends Component{
         const filteredRobots=robots.filter(robot=>{
             return robot.name.toLocaleLowerCase().includes(searchfield.toLocaleLowerCase())
         });
-        return !(robots.length) ?
+        return (!robots.length) ?
          <h1>Loading..</h1>:
         (
                 <div className="tc">
